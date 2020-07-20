@@ -1,0 +1,2 @@
+C:\Users\ahmed\OneDrive\Desktop\CppProjects2020\DoublePendulum\version3\DoublePendulum\Debug\DoublePendulum.exe
+C:\Users\ahmed\OneDrive\Desktop\CppProjects2020\DoublePendulum\version3\DoublePendulum\Debug\DoublePendulum.pdb
