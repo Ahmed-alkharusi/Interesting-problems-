@@ -115,7 +115,7 @@ pendulum1_x = r1*np.sin(pendulum1_theta)
 pendulum1_y = - r1*np.cos(pendulum1_theta)
 
 pendulum2_x = r2*np.sin(pendulum2_theta) + pendulum1_x
-pendulum2_y = r2*pendulum1_y - np.cos(pendulum2_theta)
+pendulum2_y = pendulum1_y - r2*np.cos(pendulum2_theta)
 
 
 # Here I used the matplotlib template of the double pendulum animation to animate the plot
