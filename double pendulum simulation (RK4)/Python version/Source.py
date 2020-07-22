@@ -101,7 +101,7 @@ func_array2 = np.array([a2_arr])
 for i in range(steps_no):
     temp =a1_arr
     (t,a1_arr) = rk4(deriv_a1,a1_arr,a2_arr,t,h)
-    t =-h 
+    t -=h 
     (t,a2_arr) = rk4(deriv_a2,a2_arr,temp,t,h)
     time_arr2 = np.append(time_arr, t)
     func_array1 = np.vstack((func_array1,np.array([a1_arr])))
