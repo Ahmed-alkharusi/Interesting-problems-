@@ -9,3 +9,7 @@ For the animation see
 https://youtu.be/woyswK03KhI
 and
 https://youtu.be/5vmxRNm91i8
+
+## The solar system simulation (RK4)
+![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/The%20solar%20system%20simulation%20(RK4)/Python%20version/43.png)
+For the animation see https://youtu.be/vLTeW4AxYmM
