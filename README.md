@@ -14,5 +14,6 @@ https://youtu.be/5vmxRNm91i8
 ![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/The%20solar%20system%20simulation%20(RK4)/Python%20version/43.png)
 For the animation see https://youtu.be/vLTeW4AxYmM
 
-## The Mandelbrot set 
+## Mandelbrot and Julia sets
 ![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/mandelbrot%20set%20(C%2B%2B%20wtih%20Python%20plots)/high_res.png)
+![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/mandelbrot%20set%20(C%2B%2B%20wtih%20Python%20plots)/Julia%20set%20examples/c5.png)
