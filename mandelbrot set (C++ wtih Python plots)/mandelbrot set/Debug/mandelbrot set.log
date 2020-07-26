@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\ahmed\OneDrive\Desktop\CppProjects2020\mandelbrot set\mandelbrot set\Source.cpp(22,73): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\ahmed\OneDrive\Desktop\CppProjects2020\mandelbrot set\mandelbrot set\Source.cpp(22,42): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+  mandelbrot set.vcxproj -> C:\Users\ahmed\OneDrive\Desktop\CppProjects2020\mandelbrot set\mandelbrot set\Debug\mandelbrot set.exe

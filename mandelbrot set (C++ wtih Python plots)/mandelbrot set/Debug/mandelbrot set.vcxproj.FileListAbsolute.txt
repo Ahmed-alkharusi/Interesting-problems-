@@ -1,0 +1,2 @@
+C:\Users\ahmed\OneDrive\Desktop\CppProjects2020\mandelbrot set\mandelbrot set\Debug\mandelbrot set.exe
+C:\Users\ahmed\OneDrive\Desktop\CppProjects2020\mandelbrot set\mandelbrot set\Debug\mandelbrot set.pdb
