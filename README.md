@@ -16,4 +16,12 @@ For the animation see https://youtu.be/vLTeW4AxYmM
 
 ## Mandelbrot and Julia sets
 ![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/mandelbrot%20set%20(C%2B%2B%20wtih%20Python%20plots)/high_res.png)
+###
 ![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/mandelbrot%20set%20(C%2B%2B%20wtih%20Python%20plots)/Julia%20set%20examples/c5.png)
+
+
+## The three-body problem using the RK4 method (Python and C++)
+### An example for the case of equal masses
+![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/The%20three-body%20problem%20(RK4)/examples/206.png)
+### An example for the case of unequal masses
+![alt text](https://github.com/Ahmed-alkharusi/Interesting-problems-/blob/master/The%20three-body%20problem%20(RK4)/examples/95.png)
