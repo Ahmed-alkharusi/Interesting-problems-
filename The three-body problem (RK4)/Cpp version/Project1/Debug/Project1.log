@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Array.cpp
+  Matrix.cpp
+  Source.cpp
+C:\3 body problem 2d\Cpp version\Project1\matplotlibcpp.h(870,55): warning C4244: 'argument': conversion from 'const double' to 'long', possible loss of data
+C:\3 body problem 2d\Cpp version\Project1\matplotlibcpp.h(1959,82): error C2039: 'stod': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\functional(28): message : see declaration of 'std'
+C:\3 body problem 2d\Cpp version\Project1\matplotlibcpp.h(1959,86): error C3861: 'stod': identifier not found
+C:\3 body problem 2d\Cpp version\Project1\matplotlibcpp.h(1959,99): error C2660: 'PyDict_SetItemString': function does not take 2 arguments
+C:\Users\ahmed\AppData\Local\Programs\Python\Python38\include\dictobject.h(58,17): message : see declaration of 'PyDict_SetItemString'
+  Generating Code...

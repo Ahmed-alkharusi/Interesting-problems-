@@ -1,0 +1,2 @@
+C:\3 body problem 2d\Cpp version\Project1\Debug\Project1.exe
+C:\3 body problem 2d\Cpp version\Project1\Debug\Project1.pdb
