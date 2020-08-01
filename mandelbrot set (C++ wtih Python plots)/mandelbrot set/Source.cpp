@@ -27,16 +27,16 @@ int main() {
 	const Complex c5{ -0.835,- 0.2321 };*/
 	const Complex c6{ 0,0.8 };
 	
-	const unsigned int points_no{ 2000 };
+	const unsigned int points_no{ 1000 };
 	std::vector<std::vector<double>> result(points_no, std::vector<double>(points_no, 0));
-	double x_start{ -2 };
+	double x_start{ -2.0 };
 	const unsigned int range{100};
 
 	for (size_t i{ 0 };i < points_no;i++) {
-		x_start += 3 / points_no;
+		x_start += 3.0 / points_no;
 		double y_start{ -1.5 };
 		for (size_t j{ 0 };j < points_no;j++) {
-			y_start += 3 / points_no;
+			y_start += 3.0 / points_no;
 			Complex temp{ x_start,y_start };
 			//result[j][i] = mandelbrot(temp, range);//change this for the Julia set
 			result[j][i] = julia(temp, c6, range);
