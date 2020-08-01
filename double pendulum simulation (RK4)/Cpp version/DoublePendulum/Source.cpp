@@ -1,6 +1,6 @@
 /*
  =============================================================================
- Simulating the double pendulum using Runge–Kutta method(RK4)
+ Simulating the double pendulum using Rungeâ€“Kutta method(RK4)
  =============================================================================
 
 Updated on Mon Jul 20 2020
@@ -17,7 +17,7 @@ Updated on Mon Jul 20 2020
 #include <string>
 #include "Array.h"
 
-
+// these should be moved inside main()
 const double m1{ 1.0 }; //mass of the 1st pendulum 
 const double m2{ 1.0 }; //mass of the 2nd pendulum 
 const double g{ 10.0 }; //gravity
@@ -30,7 +30,7 @@ const double pi{ 3.14159265359 };
 Array deriv_a1(Array a1_arr, Array a2_arr, Array t);
 Array deriv_a2(Array a2_arr, Array a1_arr, Array t);
 void rk4(Array(*deriv)(Array, Array, Array), Array &func_i, Array &func_i2, double &x_i, const double h);
-void output_matrix(std::vector<std::vector<double>> matrix, std::string&& file_name);
+void output_matrix(std::vector<std::vector<double>> &matrix, std::string&& file_name);
 
 
 int main() {
@@ -93,7 +93,7 @@ void rk4(Array(*deriv)(Array, Array, Array), Array& func_i, Array& func_i2, doub
 	func_i = func_i + ((k1 + (k2 * 2) + (k3 * 2) + k4)) * (h / 6);
 	x_i += h;
 }
-void output_matrix(std::vector<std::vector<double>> matrix, std::string &&file_name) {
+void output_matrix(std::vector<std::vector<double>> &matrix, std::string &&file_name) {
 	std::ofstream output_file(file_name);
 	for (size_t i{ 0 };i < matrix.size();i++) {
 		for (size_t j{ 0 };j < (matrix.at(i)).size();j++) {
