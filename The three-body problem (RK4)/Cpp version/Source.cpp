@@ -8,21 +8,21 @@ Created on Jul 30 2020
 #include <cmath>
 #include <vector>
 #include <fstream>
-#include <time.h>
+#include <chrono>
 #include "Array.h"
 #include "Matrix.h"
 
 
 
-void output_matrix(std::vector < std::vector<std::vector<double>>> result_obj, std::string&& file_name);
+void output_matrix(std::vector < std::vector<std::vector<double>>> &result_obj, std::string&& file_name);
 Matrix deriv(Matrix obj_active, Matrix obj_passive1, double mp1, Matrix obj_passive2, double mp2);
 void rk4(Matrix(*deriv)(Matrix, Matrix,double, Matrix, double), Matrix &obj_active, Matrix &obj_passive1, double mp1, Matrix &obj_passive2, double mp2, const double h);
 void implement_rk4(Matrix(*deriv)(Matrix, Matrix, double, Matrix, double),Matrix &obj_1,double &m1,Matrix &obj_2, double m2, Matrix &obj_3, double m3,double t, double step_size,double steps_no, std::vector<std::vector<std::vector<double>>> &result_obj1, std::vector<std::vector<std::vector<double>>> &result_obj2, std::vector<std::vector<std::vector<double>>> &result_obj3);
 
 int main() {
-	
+	auto start = std::chrono::high_resolution_clock::now();
 	const double step_size{ 1.0/100000.0 };//step size for the RK4 method
-	const long unsigned int steps_no{ 1000000 };//number of steps of the RK4 method
+	const long unsigned int steps_no{ 100000 };//number of steps of the RK4 method
 	//initial conditions (play around with these)
 	double t{ 0 };
 	double m1{ 1 };
@@ -46,12 +46,16 @@ int main() {
 
 	//implementation
 	implement_rk4(deriv, obj_1, m1, obj_2, m2, obj_3, m3, t, step_size, steps_no, result_obj1, result_obj2, result_obj3);
-	std::cout << "Writing files ...";
+	std::cout << "Writing files ... \n";
 
 
 	output_matrix(result_obj1, "result_obj1.txt");
 	output_matrix(result_obj2, "result_obj2.txt");
 	output_matrix(result_obj3, "result_obj3.txt");
+	auto end = std::chrono::high_resolution_clock::now();
+	auto time_taken = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+	std::cout << time_taken.count()/1000.0 << " seconds " << std::endl;
+	
 	return 0;
 }
 Matrix deriv(Matrix obj_active, Matrix obj_passive1, double mp1, Matrix obj_passive2, double mp2) {
@@ -119,7 +123,7 @@ void implement_rk4(Matrix(*deriv)(Matrix, Matrix, double, Matrix, double), Matri
 		//t += step_size;
 	}
 }
-void output_matrix(std::vector < std::vector<std::vector<double>>> result_obj, std::string&& file_name) {
+void output_matrix(std::vector < std::vector<std::vector<double>>> &result_obj, std::string&& file_name) {
 	std::ofstream output_file(file_name);
 	for (size_t i{ 0 };i < result_obj.size();i++) {
 		output_file << result_obj[i][0][0] << " " << result_obj[i][1][0] << " \n";
