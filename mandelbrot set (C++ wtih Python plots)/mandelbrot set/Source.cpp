@@ -15,7 +15,7 @@ Created on Sat Jul 25 2020
 #include <cmath>
 int mandelbrot(Complex domain, size_t range);
 int julia(Complex zo, Complex domain, size_t range);
-void output_matrix(std::vector<std::vector<double>> matrix, std::string&& file_name);
+void output_matrix(std::vector<std::vector<double>> &matrix, std::string&& file_name);
 
 int main() {
 	/*some points for the Julia set
@@ -68,7 +68,7 @@ int julia(Complex zo, Complex domain, size_t range) {
 	}
 	return 0;
 }
-void output_matrix(std::vector<std::vector<double>> matrix, std::string&& file_name) {
+void output_matrix(std::vector<std::vector<double>> &matrix, std::string&& file_name) {
 	std::ofstream output_file(file_name);
 	for (size_t i{ 0 };i < matrix.size();i++) {
 		for (size_t j{ 0 };j < (matrix.at(i)).size();j++) {
