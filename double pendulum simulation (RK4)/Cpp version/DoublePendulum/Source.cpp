@@ -17,7 +17,7 @@ Updated on Mon Jul 20 2020
 #include <string>
 #include "Array.h"
 
-// these should be moved inside main()
+// These should be moved inside main() and the functions should be modified accordingly 
 const double m1{ 1.0 }; //mass of the 1st pendulum 
 const double m2{ 1.0 }; //mass of the 2nd pendulum 
 const double g{ 10.0 }; //gravity
