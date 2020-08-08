@@ -1,0 +1,2 @@
+D:\CppProjects2020\Sandpiles\Sandpiles\Debug\Sandpiles.exe
+D:\CppProjects2020\Sandpiles\Sandpiles\Debug\Sandpiles.pdb
