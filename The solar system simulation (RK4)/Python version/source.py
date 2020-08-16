@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #initial conditions
+# ----------------------N.B. in this simulation we are assuming that all the planets have the same mass-------------------------------
 mercury_arr_x = np.array([ 0.384,0])
 mercury_arr_y = np.array([0,10.090399])
 
